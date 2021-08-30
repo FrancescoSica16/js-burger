@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <title>Create Your Burger</title>
+</head>
+<body>
+
+    <header></header>
+
+<main>
+    <div class="container">
+        <input type="text" id="nome-panino" value="nome" placeholder="digita il tuo nome" class="mt-5">
+
+        <h2 class="mt-5">Ingredienti</h2>
+
+        <!-- lista ingredienti -->
+
+        <section id="lista-ingredienti">
+            <div class="container">
+
+                <div class="row mb-3 col-6">
+
+                        <div class="col-6">
+
+                            <!-- <div class="my_carousel-img">                        
+                                <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="">
+                            </div>   -->
+
+                            <label for="cheese">Cheese </label>
+                            <input type="checkbox" id="cheese" name="cheese" class="list-item mt-3">
+
+                        </div>
+                        <div class="col-6 ">
+                
+                            <label for="egg">Egg </label>
+                            <input type="checkbox" id="egg" name="egg" class="list-item mt-3">
+
+                        </div>
+                        <div class="col-6">
+
+                            <label for="tomato">Tomato </label>
+                            <input type="checkbox" id="tomato" name="tomato" class="list-item mt-3">
+
+                        </div>
+                        <div class="col-6 ">
+
+                            <label for="lattuce">Lattuce </label>
+                            <input type="checkbox" id="lattuce" name="lattuce" class="list-item mt-3">
+
+                        </div>
+                        <div class="col-6">
+
+                            <label for="mustard">Mustard </label>
+                            <input type="checkbox" id="mustard" name="mustard" class="list-item mt-3">
+
+                        </div>
+                        <div class="col-6">
+
+                            <label for="ketchup">Ketchup</label>
+                            <input type="checkbox" id="ketchup" name="ketchup" class="list-item mt-3">
+
+                        </div>             
+                </div>
+            </div>
+        </section>
+
+        <section id="coupone">
+            <label for="discount-coupone">Discount coupone: </label>
+            <input type="text" id="discount-coupone" name="discount-coupone" class="col-8 mt-3">
+
+        </section>
+
+    </div>
+
+    <button id="calcolo" class="btn btn btn-warning text-center ">Calculate</button>
+
+    <h3 id="prezzo-calcolato"> </h3>
+
+</main>
+
+
+
+
+
+
+
+    <script type="text/javascript" src="myscript.js"></script>
+</body>
+</html>
