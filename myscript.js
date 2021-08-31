@@ -1,5 +1,5 @@
 
-// let prezzoBase = 5;
+ let prezzoBase = 5;
 
 
 const couponList = ["utente20", "influencer20", "bonus20"];
@@ -24,8 +24,8 @@ function () {
         let ingredientiAggiuntivi = document.getElementsByClassName("list-item");
         console.log(ingredientiAggiuntivi);
 
-        let prezzoBase = 5;
-        let prezzoFinale = 0;
+        prezzoFinale = prezzoBase;
+    
 
         for (let i = 0; i < ingredientiAggiuntivi.length; i++) {
 
@@ -48,7 +48,7 @@ function () {
                 
                if (couponList.includes(coupon.value)) {
                    prezzoFinale = prezzoFinale * 0.8;
-                   
+
                } else {
                   console.log("il coupon non essite") 
                }
@@ -59,7 +59,7 @@ function () {
             
         }
       
-        prezzoFinale += prezzoBase;
+        
         console.log(prezzoFinale)
         let totale = document.getElementById("somma").innerHTML = prezzoFinale ;
     }
